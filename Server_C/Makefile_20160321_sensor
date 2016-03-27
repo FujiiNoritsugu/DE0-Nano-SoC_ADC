@@ -1,0 +1,7 @@
+﻿CFLAGS=-Wall -O2 -g
+
+Test20160321_sensor: Test20160321_sensor.c
+	arm-linux-gnueabihf-gcc -g $(CFLAGS) $(LDFLAGS) $< -o $@
+
+clean:
+	rm -f Test2016321_sensor

@@ -1,0 +1,7 @@
+﻿CFLAGS=-Wall -O2 -g
+
+Test20160106_adc: Test20160106_adc.c
+	arm-linux-gnueabihf-gcc -g $(CFLAGS) $(LDFLAGS) $< -o $@
+
+clean:
+	rm -f Test20160106_adc

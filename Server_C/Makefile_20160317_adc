@@ -1,0 +1,7 @@
+﻿CFLAGS=-Wall -O2 -g
+
+Test20160317_server: Test20160317_server.c
+	arm-linux-gnueabihf-gcc -g $(CFLAGS) $(LDFLAGS) $< -o $@
+
+clean:
+	rm -f Test2016317_server
