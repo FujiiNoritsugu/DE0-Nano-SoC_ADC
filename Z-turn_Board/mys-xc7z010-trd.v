@@ -149,59 +149,9 @@ module mys_xc7z010_trd
     
 // user wire define code       
     wire PL_iCLK12M =   IO_B34_LP11; 
-//    wire PS_iCLK50M;
-//    wire PS_iRESETn;
-//    wire clk;
- 
-//    wire ledr      =     LED1_reg && SW[0];
-//    wire ledg      =     SW[1] ;
-//    wire ledb      =     SW[2] ;
 //end user wire define 
 
-//user logic example
-//    assign PS_iCLK50M = PL_iCLK12M;   
-//    assign PS_iRESETn   =   ~SW[3];
-         
-//    assign LEDS[0]  =     PS_iRESETn   ?  ledr : arm_io_led_r;
-//    assign LEDS[1]  =     PS_iRESETn   ?  ledg : arm_io_led_g;
-//    assign LEDS[2]  =     PS_iRESETn   ?  ledb : arm_io_led_b;
-//    assign BP       =     arm_io_bp;
-  
-//    reg LED1_reg; 
-//    reg [20:0] COUNT_1MS;
-//    reg [10:0] LED_BLINK_SPEED;
-//    reg PL_CLK1K;
-     
-//     always @( posedge PS_iCLK50M or negedge PS_iRESETn )
-//         begin
-//         if ( PS_iRESETn == 1'b0) begin
- //            PL_CLK1K    =   1'b0;
- //        end
- //        else if(PS_iCLK50M == 1'b1 )
- //            if(COUNT_1MS == 21'd5999) begin
- //                COUNT_1MS = 21'd0;
- //                PL_CLK1K    =   ~PL_CLK1K;
- //                end
- //            else begin
- //                COUNT_1MS = COUNT_1MS + 21'd1;
- //            end
- //    end
-         
- //    always @( posedge  PL_CLK1K or negedge PS_iRESETn )
- //       begin
- //        if ( PS_iRESETn == 1'b0) begin
- // 		    LED1_reg    =   1'b1;
- // 		    LED_BLINK_SPEED= 11'd0;
- // 	     end
- //        else if(PL_CLK1K == 1'b1 )
- // 			if(LED_BLINK_SPEED == 11'd499) begin
- // 				LED_BLINK_SPEED = 11'd0;
- // 				LED1_reg    =  ~LED1_reg;
- // 			end
-  //               else begin
-  //				LED_BLINK_SPEED = LED_BLINK_SPEED + 11'd1;                
-  //               end
-  //       end
+//start user logic
          
          wire clock50k;
          reg[6:0] range;
